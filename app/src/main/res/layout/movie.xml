@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movie"
+    android:background="#203354"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".movieactivity"
+    tools:ignore="ExtraText,MissingClass">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchview"
+        android:background="@drawable/search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:queryHint="Search here...."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:iconifiedByDefault="false"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/movierecylce"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints"
+    app:layout_constraintTop_toBottomOf="@id/searchview"
+    app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#203354"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/home_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Home"
+            android:src="@drawable/baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/movies_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFA500"
+            android:contentDescription="Movie"
+            android:src="@drawable/baseline_movie_24" />
+
+        <ImageButton
+            android:id="@+id/booking_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Booking"
+            android:src="@drawable/baseline_collections_bookmark_24" />
+
+        <ImageButton
+            android:id="@+id/notifications_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Notification"
+            android:src="@drawable/baseline_notifications_24" />
+
+        <ImageButton
+            android:id="@+id/profile_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Profile"
+            android:src="@drawable/baseline_account_circle_24" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#203354"
+    android:padding="16dp"
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".notification"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:paddingBottom="20dp"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:orientation="vertical"
+
+    android:background="@drawable/border">
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Booking Confirmed"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <!-- Notification Body -->
+    <TextView
+        android:id="@+id/notification_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your ticket for 'Inception' has been confirmed for 7:30 PM on October 31st."
+        android:textSize="10sp"
+        android:paddingLeft="10dp"
+        android:textColor="#333333"
+        android:layout_marginTop="4dp" />
+
+
+    <TextView
+        android:id="@+id/notification_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Just now"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_marginTop="4dp" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/view_ticket_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Ticket"
+            android:backgroundTint="#203354"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/cancel_booking_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:text="Cancel"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#203354"
+        android:orientation="horizontal"
+
+        android:paddingTop="460dp">
+
+        <ImageButton
+            android:id="@+id/home_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Home"
+            android:src="@drawable/baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/movies_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Movie"
+            android:src="@drawable/baseline_movie_24" />
+
+
+        <ImageButton
+            android:id="@+id/booking_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Booking"
+            android:src="@drawable/baseline_collections_bookmark_24" />
+
+        <ImageButton
+            android:id="@+id/notifications_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFA500"
+            android:contentDescription="Notification"
+            android:src="@drawable/baseline_notifications_24" />
+
+        <ImageButton
+            android:id="@+id/profile_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Profile"
+            android:src="@drawable/baseline_account_circle_24" />
+    </LinearLayout>
+
+</LinearLayout>

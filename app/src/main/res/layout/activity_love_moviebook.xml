@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#203354"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".love_moviebook">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:orientation="vertical"
+
+       >
+       <ImageView
+           android:id="@+id/backtohome"
+           android:paddingTop="20dp"
+           android:paddingLeft="20dp"
+           android:gravity="left"
+
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+       <ImageView
+           android:id="@+id/imageView2"
+           android:layout_width="match_parent"
+           android:layout_height="337dp"
+           app:srcCompat="@drawable/love1" />
+
+       <TextView
+           android:id="@+id/textView7"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Thor:Love And Thunder"
+           android:textColor="@color/white"
+           android:textSize="25dp"
+           android:textStyle="bold"
+           android:paddingLeft="20dp"/>
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingStart="10dp">
+
+        <Button
+            android:id="@+id/action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner_btn"
+            android:text="Action"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/comedy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner_btn"
+            android:text="Comedy" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/superhero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner_btn"
+            android:text="Superhero"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="400dp"
+        android:layout_height="140dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="Thor embarks on a journey unlike anything he's ever faced -- a quest for inner peace. However, his retirement gets interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods. To combat the threat, Thor enlists the help of King Valkyrie, Korg and ex-girlfriend Jane Foster, who -- to his surprise -- inexplicably wields his magical hammer."
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/getres"
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:layout_height="60dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/orange"
+            android:text="Get Reservation" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/share"
+            android:src="@drawable/baseline_share_24"
+            android:background="@drawable/orange"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_local_phone_24"
+            android:background="@drawable/orange"
+            android:text="Superhero" />
+
+
+    </LinearLayout>
+</LinearLayout>
+
